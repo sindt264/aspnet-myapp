@@ -13,13 +13,13 @@ jobs:
         uses: actions/checkout@v3
 
      # Không cần setup .NET nữa
-    # - name: Setup .NET SDK
-    #   uses: actions/setup-dotnet@v4
-    #   with:
-    #     dotnet-version: '8.0.x'
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+         dotnet-version: '8.0.x'
 
-      - name: Check .NET version
-        run: dotnet --version
+    # - name: Check .NET version
+    #    run: dotnet --version
 
       - name: Restore packages
         run: dotnet restore
