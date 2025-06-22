@@ -28,7 +28,7 @@ jobs:
         run: dotnet build --configuration Release --no-restore
 
       - name: Publish project
-        run: dotnet publish --configuration Release --output C:\inetpub\your-app-folder --no-build
+        run: dotnet publish --configuration Release --output C:\inetpub\MyApp --no-build
 
       - name: Restart IIS (nếu cần)
         run: iisreset
