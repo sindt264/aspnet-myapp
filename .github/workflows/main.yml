@@ -7,8 +7,9 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
-
+    #runs-on: windows-latest
+    runs-on: ubuntu-latest
+    
     steps:
       # 1. Lấy source code từ GitHub
       - name: Checkout source code
